@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    .container{
+        border: 3px solid red;
+        height: 620px;
+        /* to initialize the contianer as a flexbox */
+        display: flex;
+        /* flex property for flex container */
+        /* flex-direction:row-reverse;   */
+        /* flex-direction:column-reverse;   */
+        /* direction value of flex-direction is row by default  */
+
+        /* flex-wrap: wrap; */
+        /* by defaultvlaue is no wrap */
+        /* flex-flow short hand nototion for direction and wrap  */
+        flex-flow: row wrap;
+
+        /* justify will justify content in horizontal direction */
+        justify-content:space-around; 
+        /* justify-content:space-between;  */
+        /* justify-content:space-evenly;  */
+
+        /* align-items:flex-start; */
+        /* vertically center */
+        /* align-items:flex-start; */
+        /* flex start is by default */
+        align-items:stretch;
+
+
+    }
+    .item{
+        background-color:tomato;
+        border: 3px solid green;
+        padding:3px;
+        margin:5px;
+        width:200px;
+        height:200px;
+
+    }
+    #item1{
+        /* order:2; */
+        /* order specifies when the flex item will appear in ther site higher 
+        the number the later it appears */
+        flex-grow: 2;
+        /* takes more x-times more space when strech  */
+    }
+    #item2{
+        /* order:14 */
+        flex-grow: 2;
+        flex-shrink: 3;
+        /* shrink the flex itme whrn we shrink the site */
+        flex-basis: 300px;
+        /* when flex direction is row then flex-basis will control width */
+        /* when flex direction is column then flex-basis will control height */
+
+    }
+    #item3{
+        align-self:flex-end;
+        align-self:center;
+
+    }
+</style>
+<body>
+  <h3>flexbox</h3>  
+</body>
+<div class="container">
+    <div class="item" id="item1">first</div>
+    <div class="item" id="item2">seconf</div>
+    <div class="item" id="item3">third</div>
+    <!-- <div class="item" id="item4">fourth</div>
+    <div class="item" id="item5">fifth</div>
+    <div class="item" id="item6">sixth</div> -->
+</div>
+</html>

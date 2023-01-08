@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiblity adn z-index</title>
+</head>
+<style>
+    /* z-indes only works for sticky absolute relavtive and fixed not default pos static */
+.box{
+    width:170px;
+    height:170px;
+    border:2px solid black;
+}
+#box1{
+    top: 49px;
+    position: relative;
+    background-color:red;
+    z-index: 120;
+}
+#box2{
+    top: 5px;
+    position: relative;
+    /* display will remove the space it takes up/ */
+    /* display:none; */
+    /*for Visiblity will hide the element but show the space it takes */
+    /* visibility:hidden; */
+    background-color:rgb(187, 190, 8);
+}
+#box3{
+    background-color:rgb(18, 148, 61);
+}
+#box4{
+    background-color:rgb(16, 116, 173);
+}
+</style>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

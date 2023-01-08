@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height width border and background. </title>
+</head>
+<style>
+#fp{
+    background-color:red ;
+    height: 100px;
+    width: 100px;
+    border: 4px solid green ;
+
+    }
+    #sp{
+        background-color:red ;
+        height: 100px;
+        width: 100px;
+        border-top: 40px solid green ;
+
+    }
+    #tp{
+        background-color:red ;
+        height: 100px;
+        width: 100px;
+        border-left: 40px solid green ;
+        border-right: 40px solid aquamarine ;
+        border-bottom: 12px solid blue ;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    #fourp{
+        height: 100px;
+        width: 200px;
+        background-image: url('https://source.unsplash.com/200x400/?nature,water');
+        border:2px solid red;
+        background-repeat: no-repeat; /*repeat ax and y wil repeat in an axis*/
+        background-position: center center;
+      }
+      #cut{
+        width: 800px;
+        height: 400px;
+        border-radius: 40px ;
+      }
+      .cls{
+        border:4px solid black;
+      }
+</style>
+<body>
+   <h3>heading</h3>
+   <p id="fp">this is a para</p> 
+   <p id="sp">this is a para</p> 
+   <p id="tp">this is a para</p> 
+   <p id="fourp">we will be using an image now in the back. </p>
+   <div>
+    <video width=320px height=240px autoplay>
+    <source src="movie.mp4"">
+    Your browser does not support the video tag.
+    </video>
+    </div>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13778.090904126671!2d78.02168367648927!3d30.30764605028355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929a3c64b5e85%3A0xb35d10d1988f6263!2sLe%20Amritam!5e0!3m2!1sen!2sin!4v1666312330565!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <div>
+    <img id="cut" class="cls" src="back1.jpg" alt="">
+   </div>
+</body>
+</html>

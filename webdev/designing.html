@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+</head>
+<style>
+    .container {
+        color :rgb(227, 238, 228);
+        border: 3px solid blue ;
+        background-color: rgb(109, 84, 51);
+        width:766px;
+        padding: 40px ;
+        margin: 40px auto;
+    }
+    a{
+        text-decoration: none;
+        color:rgb(72, 53, 97);
+    }
+    a:hover{
+        color:rgb(0, 0, 0);
+        background-color:rgb(177, 38, 38);
+        border:3px solid lavender;
+    }
+    a:visited{
+        color:rgb(16, 214, 16)
+    }
+    a:active
+    {
+        color:rgb(235, 234, 238)
+    }
+    .btn{
+        color: lavender;
+        background-color: rgb(42, 13, 8);
+        padding:0px ;
+        border:solid 0px rgb(157, 199, 20);
+        cursor: pointer;
+        font-size:15px ;
+        border-radius: 2px;
+        clear:right;
+        
+    }
+</style>
+<body>
+    <div id="cont1" class="container">
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Placeat, voluptatum. ipsum dolor sit. ipsum dolor sit amet 
+            consectetur adipisicing elit. Cumque, et.</p> 
+        <a href="http://twitter.com"target=_blank class="btn">To go to twitter</a><br>
+        <a href="http://twitter.com"target=_blank class="btn">To go to twitter</a><br>
+        <a href="http://facebook.com"target=_blank class="btn">To go to site</a>
+
+        <!-- <button class="btn">Read More</button> -->
+    </div>
+</body>
+</html>
